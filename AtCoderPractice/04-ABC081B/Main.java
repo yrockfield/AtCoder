@@ -9,15 +9,12 @@ public class Main{
 
 		int n = Integer.parseInt(sc.nextLine());
 		String inpStr = sc.nextLine();
-		String nextStr = "";
-		int kaisu = 0;
+		int kaisu = -1;
 
-		while(inpStr != null) {
+		do {
+			kaisu ++;
 			inpStr = canContinue(n, inpStr);
-			if (inpStr != null ){
-				kaisu ++;
-			}
-		}
+		} while(inpStr != null) ;
 
 		sc.close();
 
